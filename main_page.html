@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+  <title>Путешествия без стереотипов:)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+
+  
+  <link rel="stylesheet" href="css/main_page/main.css">
+  <link rel="stylesheet" href="aos/aos.css">
+  
+		
+		<!--  -->
+  
+	  	
+
+  <!-- FontAwasome Google Fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Oswald|Open+Sans" rel="stylesheet">
+
+
+
+ <script src="https://code.jquery.com/jquery-3.3.1.js">
+ </script>
+</head>
+<body>
+<!--Заглавная часть-->
+
+	<header>
+<!-- контейнер с верхней панелью -->
+
+		<nav class="header-nav">
+		<div class="menu-icon">
+			<i class="fas fa-align-justify fa-2x"></i>
+		</div>
+<!-- Логотип -->
+		<div class="logo-caption">
+			
+  			<a href="main_page.html" class="small-logo"><img src="img/laspalmas.png" alt="LasPalmas" width="70"> </a>
+  		</div>
+<!-- Панель Меню-->
+		<div class="menu">
+		  			<ul class="menu-nav">
+		  				
+		  				<li class="submenu"><a href="#">Рубрики</a>
+							<div class="inner-list adventure">
+								<a href="">Всей семьей</a>
+								<a href="">СПА-отдых</a>
+								<a href="">Гастро-туры</a>
+								<a href="">Приключения</a>
+								<a href="">Шоппинг</a>
+								<a href="">Все статьи</a>
+							</div>
+		  				</li>
+		  				<li class="submenu"><a href="#">Атлас</a>
+		  					<div class="inner-list atlas">
+		  						<a href="europe.html">Европа</a>
+		  						<a href="africa.html">Африка</a>
+		  						<a href="asia.html">Азия</a>
+		  						<a href="australia.html">Австралия</a>
+		  						<a href="oceania.html">Океания</a>
+		  						<a href="south_america.html">Южная Америка</a>
+		  						<a href="north_america.html">Северная Америка</a>
+		  						<a href="middle_east.html">Ближний Восток</a>
+		  						
+		  					</div>
+		  				</li>
+
+		  				<li class="submenu"><a href="#">Вдохновение</a>
+							<div class="inner-list adventure">
+								<a href="">Фильмы</a>
+								<a href="">истории</a>
+								<a href="">Книги</a>
+								<a href="">Читать полностью</a>
+							</div>
+		  				</li>
+<!--поиск по сайту-->
+		  				<li class="search-button">
+		  					<a href="">поиск</a>
+		  						
+  						</li>
+		  				
+		  				
+		  			</ul>
+
+		  </div>
+
+		
+  			
+
+	</nav>
+	
+	
+<!-- Slideshow container -->
+		<div class="slideshow-container">
+			
+		<!-- Full-width images with number and caption text -->
+		
+			<div class="mySlides fade first">
+				<img src="img/palms.jpg" alt="header image" data-aos="zoom-out" data-aos-duration="2800" data-aos-easing="ease-in">
+			
+				<div class="text"></div>
+
+			</div>
+
+			<div class="mySlides fade second">
+			
+			
+				<div class="text"></div>
+
+			</div>
+			
+			<div class="mySlides fade third">
+			
+			
+				<div class="text"></div>
+
+			</div>
+			
+			<!-- Next and previous buttons -->
+			<a class="prev" onclick="plusSlides(-1)"><i class="fas fa-angle-left fa-2x"></i></a>
+			<a class="next" onclick="plusSlides(1)"><i class="fas fa-angle-right fa-2x"></i></a>
+		</div>
+		<br>
+
+
+<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+		showSlides(slideIndex += n);
+		}
+		
+		function currentSlide(n) {
+		showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		var i;
+		var slides = document.getElementsByClassName("mySlides");
+		var dots = document.getElementsByClassName("dot");
+		if (n > slides.length) {slideIndex = 1}    
+		if (n < 1) {slideIndex = slides.length}
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+		}
+		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		}
+</script>
+<div class="caption-center">
+		<h1>Путешествия</h1>
+		 <h3 class="smaller-title">без</h3>
+		 <h2 class="bigger-title">стереотипов</h2>
+		 
+		 
+	</div>
+	<div class="scroll-down">
+		 	<i class="fas fa-chevron-down"></i>
+		 </div>
+	</header>
+
+
+  <!--Часть в которой рассказывается про сайт-->
+	
+		<section  class="after-header-text">
+			<div  class="container about-us" data-aos="fade-up"><a href="#" id="start"></a>
+				<div class="row">
+					<h2  class="title"> Las Palmas</h2>
+				</div>
+				
+				<h4 class="title">сайт о захватывающих путешествиях, смелых экспедициях и самых завораживающих местах нашей планеты. 
+				</h4>
+			</div>
+		</section>
+	
+			<h5 class="small-titles"  >Что мы для вас приготовили</h5>
+	
+
+<!--________________________________________________________________БЛОК С ГЛАВНЫМИ СТАТЬЯМИ -->
+
+<section class="feachered-articles">
+	
+<div class="double-image-title first">
+	<div class="img-wrapper">
+		<img src="img/adventure.jpg" alt="main title image">
+	</div>
+	<div class="title-wrapper" data-aos="fade-up">
+		<h2 >Fugiat dolore ad aute. In consequat anim.</h2>
+			<p class="date">34.05.2345</p>
+			<p class="title-text">Occaecat incididunt labore aute laborum incididunt esse dolore consequat dolor nulla proident. Lorem ipsum quis velit sit sunt qui dolore laboris anim magna commodo fugiat enim nulla nostrud esse exercitation ut.</p>
+
+			
+		<a href="#" class="button read-more-button">read more</a>
+	</div>
+</div>
+<!-- second block title-image full width-->
+<div class="double-image-title second">
+	<div class="img-wrapper">
+		<img src="img/spa.jpg" alt="main title image">
+	</div>
+	<div class="title-wrapper" data-aos="fade-up">
+		<h2 >Fugiat dolore ad aute. In consequat anim.</h2>
+			<p class="date">34.05.2345</p>
+			<p class="title-text">Occaecat incididunt labore aute laborum incididunt esse dolore consequat dolor nulla proident. Lorem ipsum quis velit sit sunt qui dolore laboris anim magna commodo fugiat enim nulla nostrud esse exercitation ut.</p>
+			
+		<a href="#" class="button resd-more-button">read more</a>
+	</div>
+</div>
+<h5 class="small-titles"  >Lorem ipsum nostrud nulla </h5>
+<!-- columns with article-image-->
+	<div class="small-articles-wrapper">
+		
+		<div class="small-articles">
+			<a href="">
+				<div class="articles">
+					<div class="article-text" data-aos="fade-up">
+						<h3>Laboris pariatur dolore et enim.</h3>
+						<p>Nisi non quis aliqua laboris ut enim commodo nulla ea eu.Ad eu culpa ad dolore culpa reprehenderit laborum sit quis. Ad irure nostrud et adipisicing amet pariatur sint elit.</p>
+						<p class="rubrika-name">Lorem ipsum</p>
+					</div>
+					<div class="article-img">
+						<img src="img/plates_with_flowers.jpg" alt="" width ="100%">
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="small-articles">
+			<a href="">
+				<div class="articles">
+					<div class="article-text" data-aos="fade-up">
+						<h3>Laboris pariatur dolore et enim.</h3>
+						<p>Nisi non quis aliqua laboris ut enim commodo nulla ea eu.Ad eu culpa ad dolore culpa reprehenderit laborum sit quis. Ad irure nostrud et adipisicing amet pariatur sint elit.</p>
+						<p class="rubrika-name">Lorem ipsum</p>
+					</div>
+					<div class="article-img">
+						<img src="img/sydney.jpg" alt="" width ="100%">
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="small-articles">
+			<a href="">
+				<div class="articles">
+					<div class="article-text" data-aos="fade-up">
+						<h3>Laboris pariatur dolore et enim.</h3>
+						<p>Nisi non quis aliqua laboris ut enim commodo nulla ea eu.Ad eu culpa ad dolore culpa reprehenderit laborum sit quis. Ad irure nostrud et adipisicing amet pariatur sint elit.</p>
+						<p class="rubrika-name">Lorem ipsum</p>
+					</div>
+					<div class="article-img">
+						<img src="img/polinesia.jpg" alt="" width ="100%">
+					</div>
+				</div>
+			</a>
+		</div>
+		<div class="small-articles">
+			<a href="">
+				<div class="articles">
+					<div class="article-text" data-aos="fade-up">
+						<h3>Laboris pariatur dolore et enim.</h3>
+						<p>Nisi non quis aliqua laboris ut enim commodo nulla ea eu.Ad eu culpa ad dolore culpa reprehenderit laborum sit quis. Ad irure nostrud et adipisicing amet pariatur sint elit.</p>
+						<p class="rubrika-name">Lorem ipsum</p>
+					</div>
+					<div class="article-img">
+						<img src="img/bridge_in_palms.jpg" alt="" width ="100%">
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+</section>
+
+<h5 class="small-titles">А также континенты, страны и города</h5>
+
+<section class="feachered-images">
+	
+	<div class="feachered-images-container">
+		<div class="img-col">
+			<a href="" class="block-with-bg-img first">
+				<p class="text-for-block-with-bg-img">
+					<span>Америка </span>
+				</p>
+			</a>
+			<a href="" class="block-with-bg-img second">
+				<p class="text-for-block-with-bg-img">
+					<span>Азия</span>
+				</p>
+			</a>
+			<a href="" class="block-with-bg-img third">
+				<p class="text-for-block-with-bg-img">
+					<span>Австралия</span>
+				</p>
+			</a>
+		</div>
+		<div class="img-col">
+			<a href="" class="block-with-bg-img fourth">
+				<p class="text-for-block-with-bg-img">
+					<span>Африка </span>
+				</p>
+			</a>
+			<a href="" class="block-with-bg-img fifth">
+				<p class="text-for-block-with-bg-img">
+					<span>Европа </span>
+				</p>
+			</a>
+			<a href="" class="block-with-bg-img sixth">
+				<p class="text-for-block-with-bg-img">
+					<span>Океания</span>
+				</p>
+			</a>
+		</div>	
+	</div>
+	
+</section>
+ 
+
+<footer>
+	<div class="footer-box-wrapper">
+		<div class="footer-box-1">
+		<div class="subscribe-header"><h4>Dolor ut in sunt duis aute proident pariatur cillum cupidatat enim mollit nisi ut.</h4>
+			</div>
+		<div class="subscribe-box-1">
+			<div class="cta">Подписаться</div>
+
+    		<form class="form hidden">
+        		<input type="email" id="email" name="email" placeholder="mymail@gmail.com" />
+        		<input type="submit" value="Ok!"/>
+        	</form>
+        </div>
+    	</div>
+		<div class="footer-box-2 tags-cloud">
+			<h4>теги</h4>
+			<a href="" class="tags-link">country</a>
+			<a href="" class="tags-link">side</a>
+			<a href="" class="tags-link">europe</a>
+			<a href="" class="tags-link">rest</a>
+			<a href="" class="tags-link">one</a>
+			<a href="" class="tags-link">country</a>
+			<a href="" class="tags-link">side</a>
+			<a href="" class="tags-link">europe</a>
+			<a href="" class="tags-link">europe</a>
+			<a href="" class="tags-link">europe</a>
+			<a href="" class="tags-link">europe</a>
+			<a href="" class="tags-link">country</a>
+			<a href="" class="tags-link">side</a>			
+		</div>
+		<div class="footer-box-3">
+			<div class="contact-us">
+				<h4>Lorem ipsum consequat do est dolor mollit.</h4>
+				<span class="email"><i class="far fa-envelope"></i>oureemail@gmail.com</span>
+
+			</div>
+		</div>
+		<div class="footer-box-4">
+			<div class="rights-box">
+				Adipisicing tempor. Minim est labore elit.
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript">
+
+      // Иконка гамбургер
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Эффект прокрутки
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+      </script>
+ <!--       Скрипт формы подписки  ------->  
+	<script type="text/javascript">
+      $( document ).ready(function() {
+    $(".cta").click(function() {
+         $("form").slideDown(250);
+         // if form is visible
+         if ($("form").is(":visible")) {
+             // change .cta cursor to default
+             $(".cta").css('cursor', 'default');
+         }
+         $("#email").focus();
+     });
+}); 
+   </script>
+<!-- появление меню при нажатии -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('ul li').click(function(){
+			$(this).siblings().removeClass('active');
+			$(this).toggleClass('active');
+		})
+	})
+</script>
+<!-- скрипты библиотеки animation on scroll -->
+	<script src="aos/aos.js"></script>
+	 <script type="text/javascript">
+	 	 AOS.init({
+	 	 	
+	 	 	duration: 1500,
+	 	 });
+	 </script>
+</body>
+</html>
